@@ -7,7 +7,7 @@ export default class CreateUser extends Component {
         username: ''
     }
     async componentDidMount(){
-        const res = await axios.get('http://localhost:4000/api/users');
+        //const res = await axios.get('http://localhost:4000/api/users');
         this.getUsers();
         console.log(this.state.users);
     }
