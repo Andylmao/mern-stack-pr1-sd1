@@ -33,7 +33,7 @@ export default class CreateNote extends Component {
         if(this.state.editing){
             await axios.put('https://notesappback-xvcl.onrender.com/api/notes/' + this.state._id, newNote)
         }else{
-            await axios.post('https://notesappback-xvcl.onrender.com/api/notes', newNote);
+            await axios.post('https://notesappback-xvcl.onrender.com/api/notes/', newNote);
         }
         window.location.href = '/';
     }
