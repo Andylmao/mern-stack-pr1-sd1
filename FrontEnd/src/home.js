@@ -13,7 +13,7 @@ function home(){
           <Navigation />
           <div className="container p-4">
             <Routes>
-              <Route path="/" element={<NotesList />} />
+              <Route path="/noteslist" element={<NotesList />} />
               <Route path="/edit/:id" element={<CreateNote />} />
               <Route path="/create" element={<CreateNote />} />
               <Route path="/user" element={<CreateUser />} />
