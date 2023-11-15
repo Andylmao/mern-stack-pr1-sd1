@@ -1,14 +1,27 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import NotesList from './components/NotesList';
 import CreateNote from './components/CreateNote';
 import CreateUser from './components/CreateUser';
+import Signup from './signup';
+import Login from './Login';
 //asda
 
 function App() {
+
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path='/register' element={<Signup/>}> </Route>
+        <Route path='/login' element={<Login/>}> </Route>
+        <Route path="/home" element={<Home/>}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+  /*
   return (
     <Router>
       <Navigation />
@@ -21,7 +34,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  );
+  );*/
 }
 
 
