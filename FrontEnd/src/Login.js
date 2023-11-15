@@ -11,7 +11,7 @@ function Login() {
 
     const handleSubmite = (e) => {
         e.preventDefault()
-        axios.post('https://notesappback-xvcl.onrender.com/api/login',{email, password})
+        axios.post('https://notesappback-xvcl.onrender.com/api/users',{email, password})
         .then(result =>{
             console.log(result)
             if(result.data === "Success"){
