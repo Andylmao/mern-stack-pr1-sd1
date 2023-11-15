@@ -8,6 +8,7 @@ import CreateNote from './components/CreateNote';
 import CreateUser from './components/CreateUser';
 import Signup from './signup';
 import Login from './Login';
+import Home from './home';
 //asda
 
 function App() {
