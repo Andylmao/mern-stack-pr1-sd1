@@ -7,7 +7,7 @@ import NotesList from './components/NotesList';
 import CreateNote from './components/CreateNote';
 import CreateUser from './components/CreateUser';
 
-function Home(){
+function home(){
     return (
         <Router>
           <Navigation />
@@ -23,4 +23,4 @@ function Home(){
       );
 }
 
-export default Home
+export default home;
