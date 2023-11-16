@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 export default function CreateNote() {
     const [note, setNote] = useState({
@@ -8,7 +8,7 @@ export default function CreateNote() {
         content: '',
         date: ''
     })
-    const history = useHistory()
+    const history = useNavigate()
 
     const onChangeInput = e => {
         const {name, value} = e.target;
@@ -30,7 +30,7 @@ export default function CreateNote() {
                     headers: {Authorization: token}
                 })
                 
-                return history.push('/')
+                return history('/')
             }
         } catch (err) {
             window.location.href = "/";

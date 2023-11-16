@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 export default function EditNote({match}) {
     const [note, setNote] = useState({
@@ -9,7 +9,7 @@ export default function EditNote({match}) {
         date: '',
         id: ''
     })
-    const history = useHistory()
+    const history = useNavigate()
 
     useEffect(() =>{
         const getNote = async () =>{
@@ -49,7 +49,7 @@ export default function EditNote({match}) {
                     headers: {Authorization: token}
                 })
                 
-                return history.push('/')
+                return history('/')
             }
         } catch (err) {
             window.location.href = "/";
