@@ -34,7 +34,11 @@ code {
 }
 
 body {
-  background: #3498db; /* Cambié el color de fondo a un tono más claro */
+  background-image: url('C:\Users\KAREN\Desktop\mernStack\FrontEnd\src\multimedia\notasimg.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  height: 100vh;
 }
 
 .notes-page{
@@ -223,7 +227,7 @@ a{
 
 .login-page p {
   margin: 10px 0;
-  color: #ecf0f1;
+  color: #404344;
 }
 
 .login-page span:hover {
