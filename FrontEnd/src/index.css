@@ -12,17 +12,20 @@ code {
 }
 
 body {
-  background: #111; /* Color de fondo oscuro */
+  background-image: url('./imagesm/webb.jpg'); /* Ajusta la ruta según la ubicación de tu imagen */
+  background-size: cover; /* Ajusta según tus preferencias */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija la imagen de fondo */
 }
 
 .notes-page {
   width: 100%;
   min-height: 100vh;
-  color: #ddd; /* Texto en blanco */
+  color: #d3d3d3; /* Texto en blanco */
 }
 
 .notes-page header {
-  background: #333; /* Fondo del encabezado oscuro */
+  background: rgba(51, 51, 51, 0.8); /* Fondo del encabezado oscuro y semi-transparente */
   max-width: 1920px;
   min-height: 100px;
   overflow: hidden;
@@ -34,8 +37,10 @@ body {
 }
 
 a {
+  font-family: 'TuFuentePersonalizada', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Reemplaza 'TuFuentePersonalizada' con el nombre real de tu fuente */
+  font-size: 20px;
   text-decoration: none;
-  color: #ddd; /* Enlaces en blanco */
+  color: rgb(133, 96, 31); /* Enlaces en blanco */
 }
 
 .notes-page header .logo {
@@ -76,8 +81,8 @@ a {
 
 .card {
   width: 300px;
-  box-shadow: 0 0 5px #05224e;
-  background: #05224e; /* Fondo más oscuro */
+  box-shadow: 0 0 10px #f5a040;
+  background: #452507; /* Fondo más oscuro */
   padding: 10px;
   position: relative;
   color: #ddd;
