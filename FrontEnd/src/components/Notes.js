@@ -12,9 +12,9 @@ export default function Notes({setIsLogin}) {
             <Header setIsLogin={setIsLogin} />
             <section>
                 <Routes>
-                <Route path="/" element={Home} exact />
-                <Route path="/create" element={CreateNote} exact />
-                <Route path="/edit/:id" element={EditNote} exact />
+                <Route path="/" Component={Home} exact />
+                <Route path="/create" Component={CreateNote} exact />
+                <Route path="/edit/:id" Component={EditNote} exact />
                 </Routes>
             </section>
             
