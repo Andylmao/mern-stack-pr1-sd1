@@ -30,7 +30,7 @@ export default function CreateNote() {
                     headers: {Authorization: token}
                 })
                 
-                return history('/')
+                return history.push('/')
             }
         } catch (err) {
             window.location.href = "/";
