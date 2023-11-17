@@ -5,7 +5,7 @@ const cors = require('cors')
 const userRouter = require('./routes/userRouter')
 const noteRouter = require('./routes/noteRouter')
 const path = require('path')
-const axios = require('axios');
+
 
 
 
