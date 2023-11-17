@@ -11,12 +11,12 @@ export default function Nav({setIsLogin}) {
     return (
         <header>
             <div className="logo">
-                <h1><Link to="/">Notes APP</Link></h1>
+                <h1><Link to="/">App de Notas</Link></h1>
             </div>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/create">Create Note</Link></li>
-                <li onClick={logoutSubmit}><Link to="/">Logout</Link></li>
+                <li><Link to="/create">Nueva Nota</Link></li>
+                <li onClick={logoutSubmit}><Link to="/">Salir</Link></li>
             </ul>
         </header>
     )
