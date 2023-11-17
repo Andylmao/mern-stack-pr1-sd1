@@ -11,5 +11,13 @@ router.route('/:id')
     .put(auth, noteCtrl.updateNote)
     .delete(auth, noteCtrl.deleteNote)
 
-
+router.post('/api/gpt', async (req, res) => {
+    try {
+        // Tu lógica para interactuar con GPT aquí...
+        res.json({ output: 'Respuesta de GPT' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error interno del servidor');
+    }
+    });
 module.exports = router

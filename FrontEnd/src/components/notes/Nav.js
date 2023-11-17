@@ -8,6 +8,7 @@ export default function Nav({setIsLogin}) {
         setIsLogin(false)
     }
 
+
     return (
         <header>
             <div className="logo">
@@ -16,8 +17,11 @@ export default function Nav({setIsLogin}) {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/create">Nueva Nota</Link></li>
+                <li><Link to="/gpt">GPT</Link></li>
                 <li onClick={logoutSubmit}><Link to="/">Salir</Link></li>
             </ul>
         </header>
     )
+
+    
 }
